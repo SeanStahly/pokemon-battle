@@ -37,11 +37,11 @@ class Battle
     # Choose moves based on strategy, switch out?
     if @trainer1.strategy == 1
       pokemon1.chooseRandomMove pokemon2
-    else if @trainer1.strategy < 4
+    else
       pokemon1.chooseMove pokemon2
     if @trainer2.strategy == 1
       pokemon2.chooseRandomMove pokemon1
-    else if @trainer2.strategy < 4
+    else
       pokemon2.chooseMove pokemon1
     throw new Error("One of the pokemon doesn't have an attack move.") unless pokemon1.move? and pokemon2.move?
 
