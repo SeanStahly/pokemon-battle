@@ -76,11 +76,12 @@ class Trainer
       if pokemon.typeAdvantageAgainst opponent
         pokemon.score += 1
 
-      if pokemon.speed() > opponent.speed()
-        damageCalculator = new DamageCalculator
-        pokemon.chooseMove()
-        if opponent.hp * 1.25 < damageCalculator.calculate pokemon.move, pokemon, opponent
-          pokemon.score += 1
+#      if pokemon.speed() > opponent.speed()
+#        damageCalculator = new DamageCalculator
+#        if pokemon != null && opponent != null
+#          pokemon.chooseMove()
+#          if opponent.hp * 1.25 < damageCalculator.calculate pokemon.move, pokemon, opponent
+#            pokemon.score += 1
       
       if opponent.typeAdvantageAgainst pokemon
         pokemon.score -= 2
